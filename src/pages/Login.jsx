@@ -96,9 +96,12 @@ export default function Login() {
         </form>
 
         {/* Footer */}
-        <p class="text-center text-sm text-gray-500 mt-6">
+       <p class="text-center text-gray-500 mt-6">
           Don’t have an account?{" "}
-          <span class="text-blue-600 cursor-pointer hover:underline">
+         <span
+             onClick={() => route("/register")}
+             class="text-blue-600 cursor-pointer hover:underline"
+          >
             Sign Up
           </span>
         </p>
